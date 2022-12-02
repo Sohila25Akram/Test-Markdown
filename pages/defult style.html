@@ -3,19 +3,76 @@
     <head>
         <title>Defult style for markdown tools</title>
         <link rel="styleSheet" href="../stylesheets/default style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://fontawesome.com/icons">
     </head>
     <body>
+        <!--Headers-->
         <h1>Heading 1</h1>
-        <h2>Heading 1</h2>
-        <h3>Heading 2</h3>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
         <h4>Heading 4</h4>
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
         <p>this is a Paragraph</p>
-        <span>Span</span>
-        <img src="images (6).jfif">
-        <a href="http:\\www.google.com">Google Link</a>
-        <em>Italic</em>
+        <!--List-->
+        <ul class="parent">
+            <li>First item</li>
+            <li>Second item
+                <ul class="child">
+                    <li>the first of Second item</li>
+                    <li>the second of Second item</li>
+                </ul>
+            </li>
+            <li>Third item</li>
+        </ul>
+        <ol class="parent">
+            <li>First item</li>
+            <li>Second item
+                <ol class="child">
+                    <li>the first of Second item</li>
+                    <li>the second of Second item</li>
+                </ol>
+            </li>
+            <li>Third item</li>
+        </ol>
+        
+        <!--Backquote-->
+        <p class="Backquote">Backquote here</p>
+        <!--quote a code-->
+        <span class="Quote-code-single">git status</span>
+        <div class="Quote-code-multi">
+            <p>git status</p>
+            <p>git status</p>
+            <p>git status</p>
+        </div>
+        <img src="../assets/images (6).jfif">
+        <a id="normal" href="http:\\www.google.com">GitHub Pages</a>
+        <br>
+        <h1 class="show-section-link"><a id="section-link" href=""><i class="fa fa-link"></i></a>Hover here to show Section Link</h1>
+        
+        <p class="Inside-list">paragrph inside list</p>
+        <hr>
+        <!--Task list-->
+        <div class="tasks">
+            <input id="task1" type="checkbox">
+            <label for="task1">Task 1</label>
+
+        </div>
+        <div class="tasks">
+            <input id="task2" type="checkbox">
+            <label for="task2">Task 2</label>
+
+        </div>
+        <div class="tasks">
+            <input id="task3" type="checkbox">
+            <label for="task3">Task 3</label>
+
+        </div>
+        <!--Mentioned person-->
+        <span class="mention">@Sohila/repo</span>
+        
         
     </body>
 </html>
+
