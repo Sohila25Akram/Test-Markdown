@@ -64,25 +64,23 @@ img:hover{
     color: #000;
     position: absolute;
     left:5px;
-    
 }
-ul[class="parent"]{
+.ul-parent{
     list-style-type:disc;
     margin-left: 30px;
 }
-ul[class="child"]{
+.ul-child{
     list-style-type: circle;
     margin-left: 30px;
 }
-ol[class="parent"]{
+.ol-parent{
     
     margin-left: 30px;
 }
-ol[class="child"]{
+.ol-child{
     
     margin-left: 30px;
 }
-
 .Inside-list{
     margin: 4px 15px;
 }
